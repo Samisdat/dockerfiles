@@ -1,6 +1,3 @@
-# VERSION 0.1
-# DOCKER-VERSION 1.3.1
-
 FROM debian:jessie
 MAINTAINER Samisdat bastian.pertz@gmail.com
 
