@@ -28,9 +28,8 @@ RUN apt-get install -y git-core
 RUN apt-get install -y git-flow
 
 #install node
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x |  bash -
 RUN apt-get install -y nodejs
-
 
 #install grunt-cli
 RUN npm install -g grunt-cli
