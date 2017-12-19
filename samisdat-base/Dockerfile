@@ -30,6 +30,7 @@ RUN git config --global user.email bastian@pertz.eu
 # use vim as git editor and open vim for commit messages in insert mode
 RUN export VISUAL=vim
 RUN export EDITOR="$VISUAL"
+ADD vimrc /root/.vimrc
 
 # == oh-my-zsh ==================================================================== 
 RUN apk add zsh
