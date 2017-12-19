@@ -24,10 +24,10 @@ RUN apk add tig
 
 # ======================================================================= 
 RUN apk add zsh
-ADD zsh-install.sh /zsh-install.sh
-RUN chmod +x zsh-install.sh
-RUN ./zsh-install.sh
-RUN rm zsh-install.sh
+ADD oh-my-zsh-install.sh /oh-my-zsh-install.sh
+RUN chmod +x oh-my-zsh-install.sh
+RUN ./oh-my-zsh-install.sh
+RUN rm oh-my-zsh-install.sh
 
 WORKDIR /
 
