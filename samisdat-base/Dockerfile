@@ -6,7 +6,7 @@
 # * node
 # ======================================================================= 
 
-FROM node-9.3.0-alpine
+FROM node:9.3.0-alpine
 MAINTAINER samisdat bastian@pertz.eu
 
 RUN apk update
