@@ -1,5 +1,13 @@
-FROM alpine:3.4
-MAINTAINER Samisdat bastian.pertz@gmail.com
+# ======================================================================= 
+# An image that contain basic stuff, i need to develop:                          
+# * zsh                                                              
+# * git, tig git flow                                                              
+# * vim
+# * node
+# ======================================================================= 
+
+FROM node-9.3.0-alpine
+MAINTAINER samisdat bastian@pertz.eu
 
 RUN apk update
 
