@@ -34,9 +34,9 @@ RUN export EDITOR="$VISUAL"
 # == oh-my-zsh ==================================================================== 
 RUN apk add zsh
 ADD oh-my-zsh-install.sh /oh-my-zsh-install.sh
-RUN chmod +x oh-my-zsh-install.sh
-RUN ./oh-my-zsh-install.sh
-RUN rm oh-my-zsh-install.sh
+RUN chmod +x /oh-my-zsh-install.sh
+RUN /oh-my-zsh-install.sh
+RUN rm /oh-my-zsh-install.sh
 
 WORKDIR /
 
