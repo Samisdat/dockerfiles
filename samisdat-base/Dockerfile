@@ -23,7 +23,14 @@ RUN apk add curl
 RUN apk add git
 RUN apk add tig
 
-# ======================================================================= 
+# set username and email
+RUN git config --global user.name "samisdat"
+RUN git config --global user.email bastian@pertz.eu
+
+# use vim as git editor and open vim for commit messages in insert mode
+RUN export VISUAL=vim
+RUN export EDITOR="$VISUAL"
+
 # == oh-my-zsh ==================================================================== 
 RUN apk add zsh
 ADD oh-my-zsh-install.sh /oh-my-zsh-install.sh
