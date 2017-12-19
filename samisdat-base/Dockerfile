@@ -1,7 +1,7 @@
 # ======================================================================= 
-# An image that contain basic stuff, i need to develop:                          
+# An image that contain basic stuff, i need in my dev tool chain:                          
 # * zsh                                                              
-# * git, tig git flow                                                              
+# * git and tig                                                              
 # * vim
 # * node
 # ======================================================================= 
@@ -11,18 +11,20 @@ MAINTAINER samisdat bastian@pertz.eu
 
 RUN apk update
 
-# ======================================================================= 
+# = some dependencies ===================================================================== 
+
 RUN apk add htop
 RUN apk add vim
 RUN apk add wget
 RUN apk add curl
 
-# ======================================================================= 
+# = git related stuff ===================================================================== 
 
 RUN apk add git
 RUN apk add tig
 
 # ======================================================================= 
+# == oh-my-zsh ==================================================================== 
 RUN apk add zsh
 ADD oh-my-zsh-install.sh /oh-my-zsh-install.sh
 RUN chmod +x oh-my-zsh-install.sh
